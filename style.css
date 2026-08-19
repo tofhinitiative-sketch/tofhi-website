@@ -156,7 +156,7 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
    ========================================= */
 
 .menu-toggle {
-  display: none;
+  display: none !important;
   background: transparent;
   border: 0;
   color: #08a6a0;
@@ -169,7 +169,7 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
    MOBILE
    ========================================= */
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 
   .brand {
     padding: 8px 15px;
@@ -183,9 +183,9 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
   /* Show hamburger */
 
   .menu-toggle {
-    display: block;
-    margin: 0 auto 8px;
-  }
+  display: block !important;
+  margin: 0 auto 8px;
+}
 
   /* Hide navigation initially */
 
