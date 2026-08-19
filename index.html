@@ -72,4 +72,22 @@ Contact: tofhinitiative@gmail.com | 08084648748 | @tofhinitiative
 <section id="involved" class="content"><div class="wrap two"><div><div class="eyebrow">GET INVOLVED</div><h2>There is a place for you in this mission.</h2></div><div><p class="text">Volunteer your skills, partner with TOFHI, support an initiative or help us connect with communities that need health-focused action.</p><div class="buttons"><a class="btn primary" href="mailto:tofhinitiative@gmail.com?subject=TOFHI%20Get%20Involved">Get Involved →</a><a class="btn secondary" href="mailto:tofhinitiative@gmail.com?subject=TOFHI%20Partnership">Partner With Us →</a></div></div></div></section>
 <section id="contact" class="cta"><div class="wrap two"><div><h2>Join us in building healthier communities.</h2><p class="text">Together, we can make quality healthcare more accessible to all.</p></div><div><a class="btn" href="mailto:tofhinitiative@gmail.com?subject=Support%20TOFHI">♥ &nbsp; Donate or Support →</a></div></div></section>
 <footer><div class="wrap foot"><span>© 2026 TOFHI — The Olaniyan Foundation Health Initiative</span><a href="https://www.instagram.com/tofhinitiative" target="_blank">@tofhinitiative</a></div></footer>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  menuToggle.addEventListener("click", function () {
+    mainNav.classList.toggle("menu-open");
+
+    const isOpen = mainNav.classList.contains("menu-open");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation" : "Open navigation"
+    );
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+  });
+</script>
 </body></html>
