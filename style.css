@@ -1,7 +1,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{
   margin:0;
-  font-family:'Inter',Arial,Helvetica,sans-serif;
+  font-family:'nuniito',karla,Helvetica,sans-serif;
   color:#14233f;background:#fff}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #dcebea}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{width:185px;height:58px;object-fit:contain}.links{display:flex;gap:25px;align-items:center;font-size:14px;color:#596779;font-weight:600}.links a{padding:27px 0;border-bottom:2px solid transparent}.links a:hover{color:#08a6a0;border-color:#08a6a0}.actions{display:flex;gap:9px}.pill{border:1px solid #9bd9d5;border-radius:30px;padding:10px 14px;color:#078c88;font-size:12px;font-weight:bold}.pill.fill{background:#08a6a0;color:#fff}
 .hero{background:linear-gradient(105deg,#f2fffe,#e7f8f6);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1fr 1fr;min-height:570px;align-items:center}.copy{padding:65px 35px 65px 0}.badge{display:inline-block;background:#d9f4f1;color:#078f8b;padding:9px 20px;border-radius:25px;font-weight:bold;font-size:14px;margin-bottom:22px}h1{font-size:clamp(43px,5.2vw,70px);line-height:1.03;letter-spacing:-3px;margin:0 0 24px}h1 span{color:#08a6a0}.lead{font-size:17px;line-height:1.75;color:#607189;max-width:620px}.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:27px}.btn{padding:14px 22px;border-radius:30px;border:1px solid #08a6a0;font-weight:bold;font-size:14px;display:inline-block}.primary{background:#08a6a0;color:#fff}.secondary{background:#fff;color:#078f8b}
