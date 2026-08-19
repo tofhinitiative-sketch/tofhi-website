@@ -253,3 +253,457 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
     display: block !important;
   }
 }
+
+/* =========================================
+   TOFHI BRAND CONTENT
+   ========================================= */
+
+.tofhi-section {
+  padding: 95px 20px;
+  background: #ffffff;
+  scroll-margin-top: 160px;
+}
+
+.tofhi-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+/* -----------------------------------------
+   SECTION HEADINGS
+   ----------------------------------------- */
+
+.section-label {
+  color: #08a6a0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-heading h2,
+.section-intro h2,
+.two-column h2 {
+  margin: 0;
+  color: #14233f;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.1;
+}
+
+.heading-line {
+  width: 45px;
+  height: 3px;
+  background: #08a6a0;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.section-intro {
+  max-width: 720px;
+  margin-bottom: 50px;
+}
+
+.section-intro > p {
+  color: #68798b;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* -----------------------------------------
+   VISION
+   ----------------------------------------- */
+
+.vision-section {
+  background: #f7fcfc;
+  text-align: center;
+}
+
+.vision-section .section-label {
+  margin-bottom: 10px;
+}
+
+.vision-section h2 {
+  color: #14233f;
+}
+
+.vision-section .heading-line {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vision-statement {
+  max-width: 800px;
+  margin: 25px auto 0;
+  color: #4f6174;
+  font-size: clamp(20px, 2.5vw, 28px);
+  line-height: 1.65;
+}
+
+/* -----------------------------------------
+   MISSION
+   ----------------------------------------- */
+
+.mission-section {
+  background: #ffffff;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.large-text {
+  margin: 0;
+  color: #4f6174;
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+/* -----------------------------------------
+   CORE OBJECTIVES
+   ----------------------------------------- */
+
+.objectives-section {
+  background: #f7fcfc;
+}
+
+.objective-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.objective-card {
+  background: #ffffff;
+  border: 1px solid #e3eeee;
+  border-radius: 14px;
+  padding: 30px 25px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.objective-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(20, 35, 63, 0.08);
+}
+
+.card-number {
+  color: #08a6a0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.objective-card h3 {
+  color: #14233f;
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+
+.objective-card p {
+  color: #68798b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* -----------------------------------------
+   ABOUT US
+   ----------------------------------------- */
+
+.about-section {
+  background: #ffffff;
+}
+
+.about-text p {
+  color: #68798b;
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 0 0 20px;
+}
+
+.about-highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+  padding: 20px;
+  border-left: 3px solid #08a6a0;
+  background: #f7fcfc;
+}
+
+.about-highlight strong {
+  color: #14233f;
+  font-size: 16px;
+}
+
+.about-highlight span {
+  color: #08a6a0;
+  font-size: 13px;
+}
+
+/* -----------------------------------------
+   WHAT WE DO
+   ----------------------------------------- */
+
+.work-section {
+  background: #f7fcfc;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.work-card {
+  background: #ffffff;
+  border: 1px solid #e3eeee;
+  border-radius: 14px;
+  padding: 30px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(20, 35, 63, 0.08);
+}
+
+.work-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5f8f7;
+  color: #08a6a0;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.work-card h3 {
+  color: #14233f;
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.work-card p {
+  color: #68798b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* -----------------------------------------
+   PARTNERS
+   ----------------------------------------- */
+
+.partners-section {
+  background: #ffffff;
+}
+
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #dcebea;
+}
+
+.partner-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 15px;
+  border-bottom: 1px solid #dcebea;
+}
+
+.partner-item span {
+  color: #08a6a0;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.partner-item strong {
+  color: #14233f;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* -----------------------------------------
+   CORE VALUES
+   ----------------------------------------- */
+
+.values-section {
+  background: #f7fcfc;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e3eeee;
+}
+
+.value-card h3 {
+  color: #08a6a0;
+  font-size: 19px;
+  margin: 0 0 12px;
+}
+
+.value-card p {
+  color: #68798b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* -----------------------------------------
+   CONTACT
+   ----------------------------------------- */
+
+.tofhi-contact-section {
+  padding: 85px 20px;
+  background: linear-gradient(135deg, #078f8b, #08a6a0);
+  color: #ffffff;
+  scroll-margin-top: 160px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.contact-content .section-label {
+  color: #d9fffd;
+}
+
+.contact-content h2 {
+  max-width: 650px;
+  margin: 0 0 20px;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.15;
+}
+
+.contact-content p {
+  max-width: 650px;
+  margin: 0;
+  color: #e6fffe;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-button {
+  display: block;
+  padding: 15px 22px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.contact-button.primary {
+  background: #ffffff;
+  color: #078f8b;
+}
+
+.contact-button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   MOBILE BRAND CONTENT
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .tofhi-section {
+    padding: 70px 20px;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .objective-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .partner-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+}
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .tofhi-section {
+    padding: 60px 18px;
+  }
+
+  .objective-grid,
+  .work-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-statement {
+    font-size: 19px;
+  }
+
+  .large-text {
+    font-size: 18px;
+  }
+
+  .partner-item {
+    padding: 18px 5px;
+  }
+
+  .contact-content h2 {
+    font-size: 31px;
+  }
+
+}
