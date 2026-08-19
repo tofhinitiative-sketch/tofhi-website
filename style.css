@@ -25,9 +25,13 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
   .hero-image{border-radius:22px}
 }
 
-/* =========================================
-   TOFHI FULL-WIDTH BRAND HEADER
+/*/* =========================================
+   TOFHI RESPONSIVE NAVIGATION
+   Desktop: single clean line
+   Mobile: hamburger menu
    ========================================= */
+
+/* HEADER */
 
 .site-header {
   background: #ffffff;
@@ -35,8 +39,10 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
+
+/* LOGO AREA */
 
 .brand {
   padding: 8px 20px 6px;
@@ -51,55 +57,38 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
   margin: 0 auto;
 }
 
+/* =========================================
+   DESKTOP NAVIGATION
+   ========================================= */
+
 .main-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 35px;
-  padding: 13px 20px;
+  flex-wrap: nowrap;
+  gap: 24px;
+  padding: 12px 15px;
   border-top: 1px solid #edf3f2;
+  white-space: nowrap;
 }
 
-.main-nav a {
+.main-nav > a,
+.contact-dropdown > summary {
   color: #596779;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   text-decoration: none;
-  padding: 8px 0;
-  border-bottom: 2px solid transparent;
+  padding: 7px 0;
+  cursor: pointer;
   transition: 0.2s ease;
 }
 
-.main-nav a:hover {
+.main-nav > a:hover,
+.contact-dropdown > summary:hover {
   color: #08a6a0;
-  border-bottom-color: #08a6a0;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-
-  .brand {
-    padding: 14px 15px 10px;
-  }
-
-  .main-logo {
-    width: min(500px, 94vw);
-    max-height: 110px;
-  }
-
-  .main-nav {
-    gap: 16px;
-    flex-wrap: wrap;
-    padding: 10px 12px;
-  }
-
-  .main-nav a {
-    font-size: 12px;
-  }
-
-}
-
-/* /* =========================================
+/* =========================================
    CONTACT DROPDOWN
    ========================================= */
 
@@ -107,40 +96,40 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
   position: relative;
 }
 
+/* Remove browser's default arrow */
+
 .contact-dropdown summary {
   list-style: none;
-  cursor: pointer;
-  color: #596779;
-  font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 7px 0;
-  transition: 0.2s ease;
 }
 
 .contact-dropdown summary::-webkit-details-marker {
   display: none;
 }
 
-.contact-dropdown summary:hover {
-  color: #08a6a0;
+.contact-dropdown summary::marker {
+  content: "";
 }
+
+/* IMPORTANT:
+   Do not add an ::after arrow here.
+*/
+
+/* Contact box */
 
 .contact-menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 10px);
   right: 0;
 
-  /* Force the contacts to stack vertically */
+  /* Force email and phone to stack vertically */
   display: flex;
   flex-direction: column;
 
-  width: 250px;
+  min-width: 250px;
   background: #ffffff;
   border: 1px solid #dcebea;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
-
   padding: 8px;
   text-align: left;
   z-index: 2000;
@@ -150,17 +139,99 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
   display: block;
   width: 100%;
   box-sizing: border-box;
-
   padding: 11px 13px;
-
   color: #596779;
   text-decoration: none;
   font-size: 13px;
-
   border-radius: 7px;
 }
 
 .contact-menu a:hover {
   background: #f0fafa;
   color: #08a6a0;
+}
+
+/* =========================================
+   HAMBURGER BUTTON
+   ========================================= */
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  color: #08a6a0;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 5px 12px;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .brand {
+    padding: 8px 15px;
+  }
+
+  .main-logo {
+    width: min(430px, 90vw);
+    max-height: 90px;
+  }
+
+  /* Show hamburger */
+
+  .menu-toggle {
+    display: block;
+    margin: 0 auto 8px;
+  }
+
+  /* Hide navigation initially */
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 20px 15px;
+    border-top: 1px solid #edf3f2;
+    white-space: normal;
+  }
+
+  /* Navigation becomes visible */
+
+  .main-nav.menu-open {
+    display: flex;
+  }
+
+  .main-nav > a,
+  .contact-dropdown > summary {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    border-bottom: 1px solid #edf3f2;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Contact dropdown on mobile */
+
+  .contact-menu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin-top: 5px;
+
+    /* Keep contacts vertical on mobile too */
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: none;
+    border-radius: 8px;
+    text-align: center;
+  }
+
 }
