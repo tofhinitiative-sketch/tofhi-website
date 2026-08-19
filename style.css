@@ -20,3 +20,77 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
 @media(max-width:800px){
   .hero-image{border-radius:22px}
 }
+
+/* =========================================
+   TOFHI FULL-WIDTH BRAND HEADER
+   ========================================= */
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #dcebea;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  padding: 18px 20px 12px;
+}
+
+.main-logo {
+  width: min(650px, 90vw);
+  height: auto;
+  max-height: 140px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 13px 20px;
+  border-top: 1px solid #edf3f2;
+}
+
+.main-nav a {
+  color: #596779;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #08a6a0;
+  border-bottom-color: #08a6a0;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+  .brand {
+    padding: 14px 15px 10px;
+  }
+
+  .main-logo {
+    width: min(500px, 94vw);
+    max-height: 110px;
+  }
+
+  .main-nav {
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+  }
+
+  .main-nav a {
+    font-size: 12px;
+  }
+
+}
