@@ -35,13 +35,13 @@ footer{padding:28px 0;border-top:1px solid #dcebea}.foot{display:flex;justify-co
 }
 
 .brand {
-  padding: 18px 20px 12px;
+  padding: 8px 20px 6px;
 }
 
 .main-logo {
-  width: min(650px, 90vw);
+  width: min(520px, 80vw);
   height: auto;
-  max-height: 140px;
+  max-height: 95px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
